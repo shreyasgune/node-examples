@@ -1,0 +1,51 @@
+root@c5bf9c4115f9:/home/developer/node-examples/mongodb# mongod -dbpath=data    
+Sat Jun  4 23:00:27.429 [initandlisten] MongoDB starting : pid=67 port=27017 dbpath=data 64-bit host=c5bf9c4115f9
+Sat Jun  4 23:00:27.429 [initandlisten] db version v2.4.9
+Sat Jun  4 23:00:27.429 [initandlisten] git version: nogitversion
+Sat Jun  4 23:00:27.429 [initandlisten] build info: Linux orlo 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:37:58 UTC 2013 x86_64 BOOST_LIB_VERSION=1_54
+Sat Jun  4 23:00:27.429 [initandlisten] allocator: tcmalloc
+Sat Jun  4 23:00:27.429 [initandlisten] options: { dbpath: "data" }
+Sat Jun  4 23:00:27.450 [initandlisten] journal dir=data/journal
+Sat Jun  4 23:00:27.450 [initandlisten] recover begin
+Sat Jun  4 23:00:27.472 [initandlisten] recover lsn: 399187
+Sat Jun  4 23:00:27.472 [initandlisten] recover data/journal/j._0
+Sat Jun  4 23:00:27.499 [initandlisten] recover skipping application of section seq:0 < lsn:399187
+Sat Jun  4 23:00:27.527 [initandlisten] recover create file data/Radiohead.ns 16MB
+Sat Jun  4 23:00:27.933 [initandlisten] recover create file data/Radiohead.0 64MB
+Sat Jun  4 23:00:29.038 [initandlisten] recover cleaning up
+Sat Jun  4 23:00:29.038 [initandlisten] removeJournalFiles
+Sat Jun  4 23:00:29.039 [initandlisten] recover done
+Sat Jun  4 23:00:29.332 [initandlisten] waiting for connections on port 27017
+Sat Jun  4 23:00:29.342 [websvr] admin web console waiting for connections on port 28017
+Sat Jun  4 23:00:53.019 [initandlisten] connection accepted from 127.0.0.1:58700 #1 (1 connection now open)
+Sat Jun  4 23:00:53.031 [conn1] end connection 127.0.0.1:58700 (0 connections now open)
+Sat Jun  4 23:00:53.036 [initandlisten] connection accepted from 127.0.0.1:58702 #2 (1 connection now open)
+Sat Jun  4 23:00:53.077 [conn2] CMD: drop Radiohead.albums
+Sat Jun  4 23:00:53.079 [conn2] end connection 127.0.0.1:58702 (0 connections now open)
+Sat Jun  4 23:02:24.561 [initandlisten] connection accepted from 127.0.0.1:58712 #3 (1 connection now open)
+Sat Jun  4 23:02:24.585 [conn3] end connection 127.0.0.1:58712 (0 connections now open)
+Sat Jun  4 23:02:24.588 [initandlisten] connection accepted from 127.0.0.1:58714 #4 (1 connection now open)
+Sat Jun  4 23:02:24.595 [conn4] build index Radiohead.albums { _id: 1 }
+Sat Jun  4 23:02:24.597 [conn4] build index done.  scanned 0 total records. 0.001 secs
+Sat Jun  4 23:02:24.604 [conn4] CMD: drop Radiohead.albums
+Sat Jun  4 23:02:24.606 [conn4] end connection 127.0.0.1:58714 (0 connections now open)
+Sat Jun  4 23:02:28.768 [initandlisten] connection accepted from 127.0.0.1:58716 #5 (1 connection now open)
+Sat Jun  4 23:02:28.779 [conn5] end connection 127.0.0.1:58716 (0 connections now open)
+Sat Jun  4 23:02:28.782 [initandlisten] connection accepted from 127.0.0.1:58718 #6 (1 connection now open)
+Sat Jun  4 23:02:28.786 [conn6] build index Radiohead.albums { _id: 1 }
+Sat Jun  4 23:02:28.787 [conn6] build index done.  scanned 0 total records. 0 secs
+Sat Jun  4 23:02:28.792 [conn6] CMD: drop Radiohead.albums
+Sat Jun  4 23:02:28.793 [conn6] end connection 127.0.0.1:58718 (0 connections now open)
+
+
+--------------
+LOG for Server#2
+Sat Jun  4 23:51:53.551 [initandlisten] connection accepted from 127.0.0.1:58766 #30 (2 connections now open)
+Sat Jun  4 23:51:53.560 [conn30] end connection 127.0.0.1:58766 (1 connection now open)
+Sat Jun  4 23:51:53.562 [initandlisten] connection accepted from 127.0.0.1:58768 #31 (2 connections now open)
+Sat Jun  4 23:51:53.568 [conn31] build index Radiohead.albums { _id: 1 }
+Sat Jun  4 23:51:53.570 [conn31] build index done.  scanned 0 total records. 0.001 secs
+Sat Jun  4 23:51:53.583 [conn31] CMD: drop Radiohead.albums
+Sat Jun  4 23:51:53.584 [conn31] end connection 127.0.0.1:58768 (1 connection now open)
+----------------
+
